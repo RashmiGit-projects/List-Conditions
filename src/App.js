@@ -24,8 +24,8 @@ class App extends Component {
       const inputArray =  this.state.userinput.split('');
       inputArray.splice(index,1);
       const joinArray = inputArray.join(""); 
-      console.log(joinArray);
-      this.setState({ userinput:joinArray }); 
+      const lenUpdated = joinArray.length;
+      this.setState({ userinput:joinArray, inputlength:lenUpdated }); 
   }
 
 
