@@ -52,7 +52,7 @@ class App extends Component {
       <div className="App">
         <input type="text" value={this.state.userinput} onChange={this.lengthChangeHandler} />
         <p>Text Length: {this.state.inputlength}</p>
-        <ValidationComponent textlength={this.state.userinput} />
+        <ValidationComponent textlength={this.state.inputlength} />
         {charBlock}
       </div>
     );
